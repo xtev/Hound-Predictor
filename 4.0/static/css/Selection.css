@@ -1,0 +1,25 @@
+.dropdown-item:hover, .dropdown-item:hover {
+  color: #fff;
+  background-color: #212529;
+  text-decoration: none;
+}
+
+.btn.btn-primary.btn-block.dropdown-toggle.text-left {
+  border-color: #282d32;
+}
+
+.custom-control-label::before, .custom-file-label, .custom-select {
+  background-color: #282d32;
+  border-color: #5383d3;
+  color: #fff;
+}
+
+.form-control:focus, .custom-select {
+  color: #fff;
+  text-decoration: none;
+}
+
+.custom-control-label::before, .custom-file-label, .custom-select {
+  color: #fff;
+}
+

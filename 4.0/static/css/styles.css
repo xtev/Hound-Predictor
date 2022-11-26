@@ -1,0 +1,364 @@
+
+.btn.btn-primary.btn-block {
+  border: none;
+}
+#logo-main-1 {
+    border-radius: 1000px;
+    margin: 30px auto 0 auto;
+    display: block;
+    max-width: -webkit-fill-available;
+    max-height: 400px;
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 24px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 24px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #4b4c4d;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #282d32;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #4c934a;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #4c934a;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(16px);
+  -ms-transform: translateX(16px);
+  transform: translateX(16px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.col {
+  border-radius: 10px;
+  border: hidden;
+}
+
+::placeholder {
+  color: #fff;
+}
+.rounded-circle {
+  border-radius: 100% !important;
+}
+.close {
+  color: #ffffff;
+  float: right;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1;
+  text-shadow: 0 1px 0 #fff;
+}
+
+.close:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.ModalBtn:hover {
+  background-color: #282d32 !important;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 2000px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.a, a:hover, a:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+.col-11 {
+  border-radius: 5px;
+}
+
+.col-5 {
+  border-radius: 5px;
+}
+
+.custom-control-label::before, .custom-file-label, .custom-select {
+  background-color: #282d32;
+  border-color: #5383d3;
+  color: #fff;
+}
+
+.mul-select {
+  width: 100%;
+}
+
+.custom-select {
+  color: #fff;
+  text-decoration: none;
+  background-color: #282d32;
+}
+
+.custom-control-label::before, .custom-file-label, .custom-select {
+  color: #fff;
+}
+
+.automod {
+  border-color: #1a1a1a;
+  color: #fff;
+  width: 100%;
+  background-color: #2b2f33;
+  min-height: 50px;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+  padding-left: 10px;
+}
+
+.automod:hover {
+  border-color: #1a1a1a;
+}
+
+.automod option:hover {
+  box-shadow: 0 0 10px 100px #1882A8 inset;
+  background-color: #ffff00;
+  text-decoration: none;
+}
+
+option::-ms-value {
+  background: none;
+  color: #fff;
+}
+
+.automodbtn {
+  border: none;
+  outline: none;
+}
+
+.btn-primary {
+  border: hidden;
+}
+
+.btn:not(:disabled):not(.disabled) {
+}
+
+.ModalOK {
+  color: #fff;
+  background-color: #27b1db !important;
+  border: hidden;
+  width: 60px;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.ModalOK:hover {
+  opacity: 1;
+}
+
+.custom-select:disabled {
+  color: #fff;
+}
+
+.col.module-select {
+  border: hidden;
+  border-radius: 5px;
+  background-color: #3e4246;
+  padding-top: 15px;
+  padding-left: 25px;
+}
+
+.module-icon {
+  padding: 0px 0px 0px 0px;
+}
+
+.col.module-select:hover {
+  cursor: pointer;
+}
+
+.settings-input {
+  width: 100%;
+  min-height: 44px;
+  background-color: #2b2f33;
+  color: #fff;
+  border: solid;
+  border-radius: 3px;
+  border-color: #1a1a1a;
+  border-width: 1px;
+  padding-left: 10px;
+}
+
+.settings-input:focus {
+  border-color: #1a1a1a;
+  box-shadow: none;
+  outline: none;
+}
+
+.automodbtn:focus {
+  outline: none;
+  border: none;
+}
+#buttonye {
+  border-radius: 10px;
+    padding: 10px 30px 10px 30px;
+    top: -2px;
+    left: -2px;
+    margin-top: 10px;
+}
+btn btn-success{
+    position: relative;
+    display: inline-block;
+    padding: 10px 30px 10px 30px;
+    margin: 40px 0;
+    color: #03e9f4;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+    margin-right: 50px;
+    
+
+}
+btn btn-success:hover{
+    background: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 200px #03e9f4;
+     -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+}
+btn btn-success:nth-child(1){
+    filter: hue-rotate(270deg);
+}
+btn btn-success:nth-child(2){
+    filter: hue-rotate(110deg);
+}
+btn btn-success span{
+    position: absolute;
+    display: block;
+}
+btn btn-success span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#03e9f4);
+    animation: animate1 1s linear infinite;
+}
+@keyframes animate1{
+    0%{
+        left: -100%;
+    }
+    50%,100%{
+        left: 100%;
+    }
+}
+btn btn-success span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#03e9f4);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+@keyframes animate2{
+    0%{
+        top: -100%;
+    }
+    50%,100%{
+        top: 100%;
+    }
+}
+btn btn-success span:nth-child(3){
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#03e9f4);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.50s;
+}
+@keyframes animate3{
+    0%{
+        right: -100%;
+    }
+    50%,100%{
+        right: 100%;
+    }
+}
+
+
+btn btn-success span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#03e9f4);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+@keyframes animate4{
+    0%{
+        bottom: -100%;
+    }
+    50%,100%{
+        bottom: 100%;
+    }
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+
+<head>
+
+<!--      CSS       -->
+
+
+<link href="{{ url_for('static', filename='style.css') }}"  rel="stylesheet" type="text/css">
+<link href="http://fonts.cdnfonts.com/css/moon-get" rel="stylesheet">
+
+    <style>
+.collapsible {
+  background-color: #0c1012;
+  display: inline-block;
+  outline: transparent;
+  color: white;
+  cursor: pointer;
+  padding: 1px 20px;
+  text-align: center;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 20px;
+}
+
+.active{
+  background-color: #0c1012;
+  text-decoration: underline;
+            text-decoration-color: white;
+  outline: none;
+}
+.collapsible:hover {
+  background-color: #0c1012;
+}
+
+.collapsible:after {
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+  outline: none;
+}
+
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #0c1012;
+  outline: none;
+
+
+}
+</style>
+<!--      META       -->
+
+<title>Hound</title>
+
+<meta charset="utf-8">
+<meta name="description" content="Hound Predictor">
+<meta name="keywords" content="Hound Predictor">
+<meta name="author" content="Hound">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:title" content="Hound Predictor">
+<meta property="og:description" content="Bot">
+<meta property="og:url" content="https://discord.gg/hound">
+
+</head>
+
+        <div id="stars1"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+        <div id="stars4"></div>
+
+<nav id="nav" >
+
+    <div id="navtext-div" >
+    <a id="navtext">AUTOPLAY</a>
+    
+    <a href="/mines" id="navtext" >MINES</a>
+    
+    <a href="/crash" id="navtext">CRASH</a>
+
+    </div>
+    
+    </nav>
+
+
+<body>
+
+<img id="logo-main-1" style="width: 225px;height: 225px;margin-top: 5px;" src="{{pfp}}">
+
+<p id="botname-main-1">{{user}}</p>
+
+<div style="margin:100px 0 50px 0;"></div>
+
+<button class="collapsible">Predictor Stats</button>
+<div class="content">
+   <p id="name" style="text-align: center;">Total mines used</p>
+
+<p id="desc" style="text-align: center;">{{m}}</p>
+
+
+<p id="name" style="text-align: center;">Total crash used</p>
+
+<p id="desc" style="text-align: center;">{{c}}</p>
+</div>
+<button class="collapsible" style="outline: none;">Bloxflip Stats</button>
+<div class="content">
+
+<p id="name" style="text-align: center;">Username</p>
+
+<p id="desc" style="text-align: center;">{{u}}</p>
+
+<p id="name" style="text-align: center;">Rank</p>
+
+<p id="desc" style="text-align: center;">{{r}}</p>
+
+<p id="name" style="text-align: center;">Games Played</p>
+
+<p id="desc" style="text-align: center;">{{g}}</p>
+</div>
+</div>
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+</script>
+
+
+        
+</div>
+
+    
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+</body>
+
+
+</footer>
+
+<script src="js/script3.js"></script>
+<script src="../static/js/jquery.min.js"></script>
+    <script src="../static/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../static/js/script.js?v=2"></script>
+

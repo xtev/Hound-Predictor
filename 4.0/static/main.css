@@ -1,0 +1,248 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  ::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+  body {
+    margin: 0;
+    font-family: "Dosis", sans-serif;
+    font-size: 62.5%;
+    background-color: #1d1d1d;
+  }
+  h6{
+    font-family: 'Alata', sans-serif;
+    font-size: 3rem;
+    background: #ffffff;
+    text-align: center;
+    margin-bottom: 2rem;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  h5 {
+    font-family: 'Alata', sans-serif;
+    font-size: 2rem;
+    background: #ffffff;
+    background-clip: border-box;
+    letter-spacing: 0.3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .container, section {
+    height: 100vh;
+  }
+  .container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: #1d1d1d;
+  }
+  .container::before, .container::after {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    content: "";
+    border-radius: 54% 46% 42% 58% / 60% 58% 42% 40%;
+
+    background-image: linear-gradient(45deg, #971fd8, #2b0ed4);
+    animation: vawe 5s linear infinite;
+  }
+  #logo {
+    border-radius: 1000px;
+    margin: 100px auto 0 auto;
+    display: block;
+
+  }
+  .container::before {
+    top: -10%;
+    right: -10%;
+  }
+  .container::after {
+    bottom: -10%;
+    left: -15%;
+  }
+  .container .dots {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .container .dots span {
+    position: absolute;
+    border-radius: 50%;
+    background-image: linear-gradient(45deg, #971fd8, #2b0ed4);
+    border-radius: 38% 62% 55% 45% / 32% 53% 47% 68%;
+    transition: opacity 0.3s ease-in-out;
+    animation: vawe 7s linear infinite;
+    animation: glowing-button-85 20s linear infinite;
+  }
+  .container .dots span:nth-child(1) {
+    top: 10%;
+    left: calc(100% - 360px);
+    width: 75px;
+    height: 75px;
+    transform: rotate(90deg);
+    animation: vawe 5s linear infinite;
+  }
+  .container .dots span:nth-child(2) {
+    top: 15px;
+    left: 180px;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 38% 62% 33% 67% / 60% 53% 47% 40%;
+    transform: rotate(90deg);
+    animation: vawe 5s linear infinite;
+  }
+  .container .dots span:nth-child(3) {
+    right: 20px;
+    bottom: 20px;
+    width: 80px;
+    height: 80px;
+    border-radius: 38% 62% 55% 45% / 52% 53% 47% 48%;
+    transform: rotate(90deg);
+    animation: vawe 5s linear infinite;
+  }
+  .container .dots span:nth-child(4) {
+    bottom: 50px;
+    left: 240px;
+    width: 45px;
+    height: 45px;
+    border-radius: 38% 62% 55% 45% / 52% 53% 47% 48%;
+    transform: rotate(90deg);
+    animation: vawe 5s linear infinite;
+  }
+  .container .dots span:nth-child(5) {
+    right: 100px;
+    bottom: 124px;
+    width: 25px;
+    height: 25px;
+    border-radius: 38% 62% 55% 45% / 52% 53% 47% 48%;
+    transform: rotate(90deg);
+    animation: vawe 5s linear infinite;
+  }
+  .container .dots span:nth-child(6) {
+    top: 4%;
+    left: calc(100% - 400px);
+    width: 45px;
+    height: 45px;
+    transform: rotate(90deg);
+    animation: vawe 5s linear infinite;
+  }
+
+  .container .dots span:nth-child(7) {
+    top: 67px;
+    left: 100px;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 38% 62% 55% 45% / 32% 53% 47% 68%;
+    transform: rotate(90deg);
+    animation: vawe 5s linear infinite;
+  }
+  .container .dots span:nth-child(8) {
+    top: 20px;
+    left: 20px;
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    border-radius: 38% 62% 55% 45% / 32% 53% 47% 68%;
+    transform: rotate(90deg);
+    animation: vawe 5s linear infinite;
+  }
+  @keyframes vawe {
+    20% {
+      border-radius: 45% 55% 62% 38% / 53% 51% 49% 47%;
+    }
+    40% {
+      border-radius: 45% 55% 49% 51% / 36% 51% 49% 64%;
+    }
+    60% {
+      border-radius: 60% 40% 57% 43% / 47% 62% 38% 53%;
+    }
+    80% {
+      border-radius: 60% 40% 32% 68% / 38% 36% 64% 62%;
+    }
+  }
+  button span {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: #5865f2 ;
+    transform: translateY(150%);
+    border-radius: 50%;
+    left: calc((var(--n) - 1) * 25%);
+    transition: 0.5s;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
+}
+
+button:hover {
+    color: white;
+}
+
+button:hover span {
+    transform: translateY(0) scale(2);
+}
+
+button span:nth-child(1) {
+    --n: 1;
+}
+
+button span:nth-child(2) {
+    --n: 2;
+}
+
+button span:nth-child(3) {
+    --n: 3;
+}
+
+button span:nth-child(4) {
+    --n: 4;
+}
+button {
+  list-style-type: none;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  display: flex;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+button {
+  color: white;
+  font-size: 16px;
+  border: 0.3em solid transparent;
+  justify-content: space-evenly;
+  border-radius: 28px;
+  width: 14em;
+  display: flex;
+  height: 3em;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: sans-serif;
+  letter-spacing: 0.1em;
+  text-align: center;
+
+  line-height: 5px;
+  display: block;
+  position: absolute;
+  background-color: transparent;
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.5s;
+  padding: 26px 34px;
+  align-items: center;
+    justify-content: center;
+
+}
